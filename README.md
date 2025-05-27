@@ -1,8 +1,4 @@
-Here's the complete **README.md** and **Git publishing instructions**:
-
-### **1. README.md**
-```markdown
-# Azure AD Authentication Demo
+# Azure AD Authentication
 
 A simple web application that authenticates users against K.R. Mangalam University's Azure AD directory.
 
@@ -65,18 +61,6 @@ npm start
    - `CLIENT_ID` - Application (client) ID
    - `CLIENT_SECRET` - Newly created secret value
 
-## Deployment
-### Free Hosting Options
-1. **Vercel**:
-   - Connect GitHub repo
-   - Set environment variables
-   - Deploy!
-
-2. **Render**:
-   - Create Web Service
-   - Set environment variables
-   - Deploy from GitHub
-
 ## Folder Structure
 ```
 azure-ad-auth-demo/
@@ -91,62 +75,3 @@ azure-ad-auth-demo/
 
 ## License
 MIT License
-```
-
-### **2. Git Publishing Steps in VS Code**
-
-1. **Initialize Git Repository**
-   - Open VS Code
-   - Open project folder
-   - Open terminal (`Ctrl+``)
-   ```bash
-   git init
-   ```
-
-2. **Stage Files**
-   ```bash
-   git add .
-   ```
-
-3. **Initial Commit**
-   ```bash
-   git commit -m "Initial commit: Azure AD authentication demo"
-   ```
-
-4. **Create GitHub Repository**
-   - Go to [github.com/new](https://github.com/new)
-   - Repository name: `azure-ad-auth-demo`
-   - Keep all default settings
-   - Click "Create repository"
-
-5. **Connect Local Repository**
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/azure-ad-auth-demo.git
-   ```
-
-6. **Push Code**
-   ```bash
-   git branch -M main
-   git push -u origin main
-   ```
-
-7. **Verify on GitHub**
-   - Refresh your GitHub repository page
-   - All files should appear
-   - Add `README.md` content through GitHub UI if needed
-
-### **3. Final Checklist**
-1. Ensure sensitive data is excluded:
-   - `.env` in `.gitignore`
-   - No credentials in code
-
-2. Test locally before pushing:
-   ```bash
-   npm start
-   ```
-
-3. For deployment:
-   - Set environment variables in hosting platform
-  - Update `REDIRECT_URI` to production URL
-
-You're now ready to share your repository link with collaborators! The complete solution is now version-controlled and deployable.
