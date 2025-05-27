@@ -61,18 +61,6 @@ npm start
    - `CLIENT_ID` - Application (client) ID
    - `CLIENT_SECRET` - Newly created secret value
 
-## Deployment
-### Free Hosting Options
-1. **Vercel**:
-   - Connect GitHub repo
-   - Set environment variables
-   - Deploy!
-
-2. **Render**:
-   - Create Web Service
-   - Set environment variables
-   - Deploy from GitHub
-
 ## Folder Structure
 ```
 azure-ad-auth-demo/
@@ -87,4 +75,3 @@ azure-ad-auth-demo/
 
 ## License
 MIT License
-```
