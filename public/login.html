@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KRMU Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            font-family: Arial, sans-serif;
+        }
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+        }
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .ms-btn {
+            background: #2F80ED;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px auto;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .ms-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(255,255,255,0.3),
+                transparent
+            );
+            transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);;
+        }
+        .ms-btn:hover {
+            transform: scale(1.05);
+            background: #256fcc;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img src="/KRMU_logo.jpg" alt="KRMU Logo" class="logo">
+        <h1>K.R. Mangalam University</h1>
+        <a href="/login" class="ms-btn">
+            <i class="fab fa-microsoft"></i>
+            Sign in with Microsoft
+        </a>
+    </div>
+</body>
+</html>
